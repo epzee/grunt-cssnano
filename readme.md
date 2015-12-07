@@ -18,16 +18,16 @@ $ npm install --save-dev grunt-cssnano
 require('load-grunt-tasks')(grunt); // npm install --save-dev load-grunt-tasks
 
 grunt.initConfig({
-	cssnano: {
-		options: {
-			sourcemap: true
-		},
-		dist: {
-			files: {
-				'dist/app.css': 'src/app.css'
-			}
-		}
-	}
+    cssnano: {
+        options: {
+            sourcemap: true
+        },
+        dist: {
+            files: {
+                'dist/app.css': 'src/app.css'
+            }
+        }
+    }
 });
 
 grunt.registerTask('default', ['cssnano']);
